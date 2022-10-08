@@ -1,5 +1,6 @@
 # NLP-Spell-Checker
-#Word Level
+Word Level
+
 1.1. Preprocessing
 
 We have created tri-gram index for the dictionary. For the misspelt word, a
@@ -40,7 +41,7 @@ values as follows
 4. Sort the candidates based on ’prob’ and return the first five candidates
 as suggestions
 
-##Phrase Level
+Phrase Level
 
 2.1. Algorithm
 
@@ -64,7 +65,7 @@ technique to mix bi-grams and tri-grams.
 6. The candidate suggestion having the maximum score is reported as
 the correct phrase
 
-#Sentence Level
+Sentence Level
 
 3.1. Algorithm
 
@@ -83,11 +84,11 @@ F1 score.
 the correct sentence.
 
 
-#Smoothing method
+Smoothing method
 
 Used Add K smoothing with m=1
 
-#Resources
+Resources
 
 Dictionary
 
@@ -96,6 +97,6 @@ Corpora
 • Free frequent n-grams data based on Corpus of Contemporary American
 English downloaded from the url http://www.ngrams.info
 
-#Evaluation
+Evaluation
 
 Evaluation is done using the Mean Reciprocal Rank measure.
