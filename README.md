@@ -1,16 +1,16 @@
 # NLP-Spell-Checker
-1 Word Level
-1.1 Preprocessing
+1. Word Level
+1.1. Preprocessing
 We have created tri-gram index for the dictionary. For the misspelt word, a
 first level candidate set can be selected by look into the tri-gram index.
-1.2 Pruning the search space
+1.2. Pruning the search space
 After selecting candidate words from the dictionary using tri-gram index,
 a second level pruning is done based on edit distance between given word
 and all the words in the current candidate set. Here all candidates having
 edit distance less than or equal to 3 are selected. If given word length is less
 than or equal to 2, then for first level pruning, all words having a length less
 than or equal to 2 are selected.
-1.3 Algorithm
+1.3. Algorithm
 Input : Word w
 Output : Suggestions for w if w is a misspelt word
 1. If w is in the dictionary, return w (correct word)
@@ -36,8 +36,8 @@ values as follows
 4. Sort the candidates based on ’prob’ and return the first five candidates
 as suggestions
 
-2 Phrase Level
-2.1 Algorithm
+2. Phrase Level
+2.1. Algorithm
 Input : Phrase to check for spelling correction Output : Misspelt word in
 the phrase with suggestions
 1. Each word in the input is checked against all the words in the dictionary.
@@ -58,8 +58,8 @@ technique to mix bi-grams and tri-grams.
 6. The candidate suggestion having the maximum score is reported as
 the correct phrase
 
-3 Sentence Level
-3.1 Algorithm
+3. Sentence Level
+3.1. Algorithm
 Input : Sentence to check for spelling correction Output : Misspelt word in
 the sentence with suggestions
 1. Got the candidate replacements as per the method mentioned in the
@@ -75,15 +75,15 @@ F1 score.
 the correct sentence.
 
 
-4 Smoothing method
+4. Smoothing method
 Used Add K smoothing with m=1
 
-5 Resources
+5. Resources
 Dictionary
 Corpora
 • Brown corpus from nltk library
 • Free frequent n-grams data based on Corpus of Contemporary American
 English downloaded from the url http://www.ngrams.info
 
-6 Evaluation
+6. Evaluation
 Evaluation is done using the Mean Reciprocal Rank measure.

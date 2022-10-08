@@ -54,7 +54,7 @@ from the N gram data set (Free frequent n-grams data based on Corpus
 of Contemporary American English).
 5. Using these frequencies, we compute the joint probability of each candidate
 suggestion using ngram model in log space. We used interpolation
-technique to mix bi-gram and tri-gram with  as 0.5 .
+technique to mix bi-grams and tri-grams.
 6. The candidate suggestion having the maximum score is reported as
 the correct phrase
 
